@@ -19,10 +19,17 @@ require_once(APP_PATH."bootstrap.php");
 require_once(APP_PATH."controller.php");
 require_once(APP_PATH."model.php");
 require_once(APP_PATH."view.php");
+try {
+	bootstrap:: run(new request);
+	} catch(Exception $e){
+		echo $e ->getMessage;
+	}	
 
+/*
 /*echo "<pre>";
 print_r(get_required_files());
 */
+/*
 
 if (isset($_GET['url'])){
 	$url = filter_input(INPUT_GET, 'url',FILTER_SANITIZE_URL);
@@ -40,6 +47,7 @@ echo "<br>";
 echo $action;
 echo "<br>";
 print_r($args);*/
+/*
 
 if(!isset($controller)){
 $controller = "pages";
@@ -72,4 +80,4 @@ if(file_exists($path)){
 	}
 }else{
 	echo "El controlador $controller no existe";	
-}
+}*/
