@@ -15,10 +15,10 @@ class Bootstrap
 		    }else{
 			      $method = "index";
 		    }
-		    if(isset($args)){
+		    if(!empty($args)){
 			    call_user_func_array(array($controller, $method), $args);
 		    }else{
-			    call_user_func_array(array($controller, $method));
+			    call_user_func(array($controller, $method));
 			}
 
 		}else{

@@ -16,4 +16,19 @@ class UsersController  extends AppController{
 
 		$this->set("users",$users);
 	}
+
+	public function add(){
+			if($_POST){
+				print_r($_POST);
+
+
+			}
+}
+
+public function edit($id){
+	if($_GET) {
+	
+		$this->set("id",$id);
+	}
+}
 }

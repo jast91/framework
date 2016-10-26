@@ -39,7 +39,9 @@ class view
 		          include_once($header);
 		          include_once($routeView);
 		          include_once($footer);
+
 	    }else{
+	    	
 		      throw new Exception("la vita para el metodo $_method no existe", 1);
 		}
 	}
