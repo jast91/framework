@@ -19,7 +19,7 @@ class Bootstrap
 			    call_user_func_array(array($controller, $method), $args);
 		    }else{
 			    call_user_func(array($controller, $method));
-			}
+			}            
 
 		}else{
 			throw new Exception("Controlador no encontrado", 1);

@@ -12,7 +12,7 @@
 
 	<nav>
 	
-		<ul>
+		<ul class=" ">
 		 		<li><a href="<?php echo  APP_URL; ?>">Inicio</a></li>
 		 		<li><a href="<?php echo APP_URL; ?>/users ">Usuarios</a></li>
 		 		<li><a href="#">Productos</a></li>

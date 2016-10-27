@@ -19,7 +19,15 @@ class UsersController  extends AppController{
 
 	public function add(){
 			if($_POST){
-				print_r($_POST);
+				if($this->users->save("users",$_POST)){
+					$this->redirect(array("controller"=>"users"));
+				}else{
+					$this->redirect(array("controller"=>"users","method"=>"add"));
+				}
+
+		
+
+				//print_r($_POST);
 
 
 			}

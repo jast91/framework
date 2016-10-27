@@ -14,6 +14,7 @@ echo "<br>";
 echo APP_PATH;
 */
 require_once(APP_PATH."config.php");
+require_once(APP_PATH."database.php");
 require_once(APP_PATH."request.php");
 require_once(APP_PATH."bootstrap.php");
 require_once(APP_PATH."controller.php");
@@ -22,7 +23,7 @@ require_once(APP_PATH."view.php");
 try {
 	bootstrap:: run(new request);
 	} catch(Exception $e){
-		echo $e ->getMessage;
+		echo $e ->getMessage();
 	}	
 
 /*
