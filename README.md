@@ -1,2 +1,3 @@
-#Framework basico	
-###Framework para la asignatura de desarrollo de aplicacion web.
+# framework basico
+
+###framework para la asignatura de aplicacion web
